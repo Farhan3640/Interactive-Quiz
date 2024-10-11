@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - Interactive Quiz</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<center>
+    <body>
+        <h1>Your Quiz Result</h1>
+        <div class="result">
+            Your score: <span id="score"></span>
+        </div>
+        <a href="quiz.html">Try Again</a>
+        <script>
+        
+            document.getElementById('score').textContent = localStorage.getItem('quizScore');
+        </script>
+    </body>
+</center>
+
+</html>

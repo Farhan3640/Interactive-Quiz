@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Interactive Quiz</title>
+    <link rel="stylesheet" href="stylesheet.css"> 
+</head>
+<body>
+    <h1>Interactive Quiz</h1>
+    <div class="quiz-container">
+        <form id="quizForm">
+        
+            <div class="question" id="q1">
+                <h3>1. What is the capital of France?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q1" value="correct" id="q1a">
+                        <label for="q1a">Paris</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="incorrect" id="q1b">
+                        <label for="q1b">London</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="incorrect" id="q1c">
+                        <label for="q1c">Rome</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="incorrect" id="q1d">
+                        <label for="q1d">Berlin</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q2" style="display:none;">
+                <h3>2. What is the largest planet in our solar system?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q2" value="incorrect" id="q2a">
+                        <label for="q2a">Earth</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" value="correct" id="q2b">
+                        <label for="q2b">Jupiter</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" value="incorrect" id="q2c">
+                        <label for="q2c">Mars</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" value="incorrect" id="q2d">
+                        <label for="q2d">Venus</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q3" style="display:none;">
+                <h3>3. Who wrote "Hamlet"?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q3" value="correct" id="q3a">
+                        <label for="q3a">William Shakespeare</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="incorrect" id="q3b">
+                        <label for="q3b">Charles Dickens</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="incorrect" id="q3c">
+                        <label for="q3c">J.K. Rowling</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="incorrect" id="q3d">
+                        <label for="q3d">Mark Twain</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q4" style="display:none;">
+                <h3>4. What is the chemical symbol for water?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q4" value="correct" id="q4a">
+                        <label for="q4a">H₂O</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" value="incorrect" id="q4b">
+                        <label for="q4b">CO₂</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" value="incorrect" id="q4c">
+                        <label for="q4c">O₂</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" value="incorrect" id="q4d">
+                        <label for="q4d">N₂</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q5" style="display:none;">
+                <h3>5. What is the powerhouse of the cell?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q5" value="correct" id="q5a">
+                        <label for="q5a">Mitochondria</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" value="incorrect" id="q5b">
+                        <label for="q5b">Nucleus</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" value="incorrect" id="q5c">
+                        <label for="q5c">Ribosome</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" value="incorrect" id="q5d">
+                        <label for="q5d">Endoplasmic Reticulum</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q6" style="display:none;">
+                <h3>6. Who painted the Mona Lisa?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q6" value="correct" id="q6a">
+                        <label for="q6a">Leonardo da Vinci</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" value="incorrect" id="q6b">
+                        <label for="q6b">Vincent van Gogh</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" value="incorrect" id="q6c">
+                        <label for="q6c">Pablo Picasso</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" value="incorrect" id="q6d">
+                        <label for="q6d">Claude Monet</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q7" style="display:none;">
+                <h3>7. In which year did the Titanic sink?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q7" value="incorrect" id="q7a">
+                        <label for="q7a">1905</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q7" value="incorrect" id="q7b">
+                        <label for="q7b">1910</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q7" value="correct" id="q7c">
+                        <label for="q7c">1912</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q7" value="incorrect" id="q7d">
+                        <label for="q7d">1915</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q8" style="display:none;">
+                <h3>8. What is the smallest country in the world?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q8" value="correct" id="q8a">
+                        <label for="q8a">Vatican City</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q8" value="incorrect" id="q8b">
+                        <label for="q8b">Monaco</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q8" value="incorrect" id="q8c">
+                        <label for="q8c">Nauru</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q8" value="incorrect" id="q8d">
+                        <label for="q8d">Tuvalu</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q9" style="display:none;">
+                <h3>9. Who was the first person to walk on the moon?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q9" value="correct" id="q9a">
+                        <label for="q9a">Neil Armstrong</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q9" value="incorrect" id="q9b">
+                        <label for="q9b">Buzz Aldrin</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q9" value="incorrect" id="q9c">
+                        <label for="q9c">Yuri Gagarin</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q9" value="incorrect" id="q9d">
+                        <label for="q9d">John Glenn</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question" id="q10" style="display:none;">
+                <h3>10. What is the main ingredient in guacamole?</h3>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="q10" value="correct" id="q10a">
+                        <label for="q10a">Avocado</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q10" value="incorrect" id="q10b">
+                        <label for="q10b">Tomato</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q10" value="incorrect" id="q10c">
+                        <label for="q10c">Onion</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q10" value="incorrect" id="q10d">
+                        <label for="q10d">Pepper</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button type="button" class="nav-btn" id="prevBtn" onclick="changeQuestion(-1)" style="display: none;">Previous</button>
+                <button type="button" class="nav-btn" id="nextBtn" onclick="changeQuestion(1)">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let currentQuestion = 0;
+        const questions = document.querySelectorAll('.question');
+
+
+        function showQuestion(index) {
+            questions.forEach((q, i) => {
+                q.style.display = i === index ? 'block' : 'none';
+            });
+
+            document.getElementById('prevBtn').style.display = index === 0 ? 'none' : 'inline';
+            document.getElementById('nextBtn').textContent = index === questions.length - 1 ? 'Submit' : 'Next';
+        }
+
+        function changeQuestion(direction) {
+            if (direction === 1 && currentQuestion < questions.length - 1) {
+                currentQuestion++;
+            } else if (direction === -1 && currentQuestion > 0) {
+                currentQuestion--;
+            } else if (direction === 1 && currentQuestion === questions.length - 1) {
+                submitQuiz();
+                return;
+            }
+            showQuestion(currentQuestion);
+        }
+
+        function submitQuiz() {
+            const quizForm = document.getElementById('quizForm');
+            const formData = new FormData(quizForm);
+            let score = 0;
+            
+            for (let value of formData.values()) {
+                if (value === 'correct') {
+                    score++;
+                }
+            }
+
+        
+            localStorage.setItem('quizScore', score);
+
+        
+            window.location.href = 'result.html';
+        }
+
+        
+        showQuestion(currentQuestion);
+    </script>
+</body>
+</html>
